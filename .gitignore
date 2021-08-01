@@ -1,0 +1,7 @@
+raw_files/
+node_modules/
+data_collection/
+package-lock.json
+package.json
+.eslintrc.json
+clean_data/
