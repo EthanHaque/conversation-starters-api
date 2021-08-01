@@ -16,6 +16,10 @@ function getRandomQuestion() {
 app.get('/api/question', (req, res) => {
     res.send(getRandomQuestion());
 });
+
+app.get('/', function (req, res) {
+    res.render('index', {});
+  });
  
 const port = process.env.PORT || 8080;
 app.listen(port);
