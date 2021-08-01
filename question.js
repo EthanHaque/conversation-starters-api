@@ -1,16 +1,23 @@
 
 
 async function getRandomQuestion() {
-    fetch("https://conversation-starters-api.herokuapp.com/api/question").then(response => {
-        const question = response.json();
-        const element = document.querySelector("#question");
-        element.innerHTML =  question.question;
-    });
+    const url = "https://conversation-starters-api.herokuapp.com/api/question";
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        if (data) {
+            changeText(data.question);
+        } else {
+            throw new Error('An error occured.');
+        }
+    } catch (error) {
+        console.log(error);
+    }
 }
 
-function main() {
-    getRandomQuestion();
+function changeText(quesiton) {
+    const ele = document.querySelector("#question");
+    ele.innerHTML = quesiton;
 }
 
-main();
-console.log("object");
+getRandomQuestion();
