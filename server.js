@@ -17,9 +17,9 @@ app.get('/api/question', (req, res) => {
     res.send(getRandomQuestion());
 });
 
-app.get('/', function (req, res) {
-    res.render('index.html', {});
-  });
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + '/index.html');
+});
  
 const port = process.env.PORT || 8080;
 app.listen(port);
