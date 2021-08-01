@@ -2,7 +2,7 @@
   "name": "conversation-starters-api",
   "version": "1.0.0",
   "description": "Random conversation starter questions",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./api/server.js"
