@@ -11,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/EthanHaque/conversation-starters-api.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ethan Haque",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/EthanHaque/conversation-starters-api/issues"
   },
