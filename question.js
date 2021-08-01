@@ -6,7 +6,7 @@ async function getRandomQuestion() {
         const response = await fetch(url);
         const data = await response.json();
         if (data) {
-            changeText(data.question);
+            changeText(data);
         } else {
             throw new Error('An error occured.');
         }
@@ -15,9 +15,11 @@ async function getRandomQuestion() {
     }
 }
 
-function changeText(quesiton) {
-    const ele = document.querySelector("#question");
-    ele.innerHTML = quesiton;
+function changeText(data) {
+    const questionEle = document.querySelector("#question");
+    const ratingEle = document.querySelector("#rating")
+    questionEle.innerHTML = data.question;
+    ratingEle.innerHTML = data.rating;
 }
 
 getRandomQuestion();
