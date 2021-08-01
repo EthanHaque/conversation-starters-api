@@ -1,7 +1,11 @@
 const express = require('express');
+const cors = require("cors");
 const questions = require("./all_questions.json")
 const app = express();
 app.use(express.json());
+app.use(cors({
+    origin: "*"
+}))
  
 function getRandomQuestion() {
     const question = questions["questions"][Math.floor(Math.random() * questions["questions"].length)];
