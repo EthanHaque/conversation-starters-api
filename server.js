@@ -13,13 +13,15 @@ function getRandomQuestion() {
     return question;
 }
 
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + '/public/index.html');
+});
+
 app.get('/api/question', (req, res) => {
     res.send(getRandomQuestion());
 });
 
-app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/index.html');
-});
+
  
 const port = process.env.PORT || 8080;
 app.listen(port);
