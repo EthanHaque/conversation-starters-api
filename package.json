@@ -1,0 +1,23 @@
+{
+  "name": "conversation-starters-api",
+  "version": "1.0.0",
+  "description": "Random conversation starter questions",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthanHaque/conversation-starters-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EthanHaque/conversation-starters-api/issues"
+  },
+  "homepage": "https://github.com/EthanHaque/conversation-starters-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
