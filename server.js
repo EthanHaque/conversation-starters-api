@@ -18,7 +18,7 @@ app.get('/api/question', (req, res) => {
 });
 
 app.get('/', function (req, res) {
-    res.render('index', {});
+    res.render('index.html', {});
   });
  
 const port = process.env.PORT || 8080;
