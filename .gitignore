@@ -1,2 +1,4 @@
 .eslintrc.json
 node_modules/
+restructure_questions.js
+all_questions_original.json
