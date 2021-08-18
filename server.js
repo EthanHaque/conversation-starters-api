@@ -19,7 +19,7 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-app.get('/api/question', (req, res) => {
+app.get('/api/v1/question', (req, res) => {
     res.send(getRandomQuestion());
 });
 
