@@ -22,9 +22,8 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-app.get('/api/v1/question/:ratings', (req, res) => {
-    res.send(getRandomQuestion("5"));
-    // res.send(getRandomQuestion(req.params.ratings));
+app.get('/api/v1/question/', (req, res) => {
+    res.send(getRandomQuestion(req.query.ratings));
 });
 
 
