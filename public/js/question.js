@@ -15,6 +15,19 @@ async function getRandomQuestion(ratings) {
     }
 }
 
+function getCheckedBoxes() {
+
+    let out = "";
+    let boxes = document.getElementsByClassName("form-check-input");
+    Array.from(boxes).forEach(element => {
+        console.log(element);
+        if (element["checked"] == true) {
+            out += element.id
+        }
+    });
+    return out;
+}
+
 function changeText(data) {
     const questionEle = document.querySelector("#question");
     const ratingEle = document.querySelector("#rating")
@@ -22,4 +35,4 @@ function changeText(data) {
     ratingEle.innerHTML = `rating: ${data.rating}`;
 }
 
-getRandomQuestion();
+getRandomQuestion(getCheckedBoxes());

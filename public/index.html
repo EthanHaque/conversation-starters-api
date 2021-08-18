@@ -24,11 +24,12 @@
 	<div class="container">
 		<div class="px-4 py-1 my-1 text-center">
 			<div class="col-lg-6 mx-auto">
-				<p>https://conversation-starters-api.herokuapp.com/api/v1/question/ratings=012345</p>
-
+				<a target="blank"
+					href="https://conversation-starters-api.herokuapp.com/api/v1/question/ratings=012345">https://conversation-starters-api.herokuapp.com/api/v1/question/ratings=012345
+				</a>
 				<div class="d-grid gap-2 d-sm-flex justify-content-sm-between py-1">
 					<button type="button" class="btn btn-primary btn-lg px-4 gap-3"
-						onclick="getRandomQuestion()">Change</button>
+						onclick="getRandomQuestion(getCheckedBoxes())">Change</button>
 					<div>
 						<button disabled type="button" class="btn btn-outline-secondary btn-lg px-4" id="rating">
 						</button>
@@ -38,6 +39,37 @@
 			</div>
 		</div>
 	</div>
+	<div class="d-flex justify-content-center">
+
+		<p>ratings</p>
+	</div>
+	<div class="d-flex justify-content-center">
+		<div class="form-check form-switch px-4">
+			<input class="form-check-input" type="checkbox" id="0" checked>
+			<label class="form-check-label" for="check0">0</label>
+		</div>
+		<div class="form-check form-switch px-4">
+			<input class="form-check-input" type="checkbox" id="1" checked>
+			<label class="form-check-label " for="check1">1</label>
+		</div>
+		<div class="form-check form-switch px-4">
+			<input class="form-check-input" type="checkbox" id="2" checked>
+			<label class="form-check-label" for="check2">2</label>
+		</div>
+		<div class="form-check form-switch px-4">
+			<input class="form-check-input" type="checkbox" id="3" checked>
+			<label class="form-check-label" for="chec3">3</label>
+		</div>
+		<div class="form-check form-switch px-4">
+			<input class="form-check-input" type="checkbox" id="4" checked>
+			<label class="form-check-label" for="check4">4</label>
+		</div>
+		<div class="form-check form-switch px-4">
+			<input class="form-check-input" type="checkbox" id="5" checked>
+			<label class="form-check-label" for="check5">5</label>
+		</div>
+	</div>
+
 
 	<script src="./js/question.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
