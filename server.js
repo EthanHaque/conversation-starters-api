@@ -23,8 +23,8 @@ app.get('/', function(req, res) {
 });
 
 app.get('/api/v1/question/:ratings', (req, res) => {
-    console.log(req.params.ratings);
-    res.send(getRandomQuestion(req.params.ratings));
+    res.send(getRandomQuestion("5"));
+    // res.send(getRandomQuestion(req.params.ratings));
 });
 
 
