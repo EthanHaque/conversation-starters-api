@@ -19,7 +19,7 @@ function changeText(data) {
     const questionEle = document.querySelector("#question");
     const ratingEle = document.querySelector("#rating")
     questionEle.innerHTML = data.question;
-    ratingEle.innerHTML = "rating: ${data.rating}";
+    ratingEle.innerHTML = `rating: ${data.rating}`;
 }
 
 getRandomQuestion();
