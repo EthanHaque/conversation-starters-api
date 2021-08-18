@@ -1,7 +1,7 @@
 
 
 async function getRandomQuestion(ratings) {
-    const url = `https://conversation-starters-api.herokuapp.com/api/v1/question/ratings=${ratings}`;
+    const url = `https://conversation-starters-api.herokuapp.com/api/v1/question/?ratings=${ratings}`;
     try {
         const response = await fetch(url);
         const data = await response.json();
