@@ -9,8 +9,9 @@ app.use(cors({
 }))
 
  
-function getRandomQuestion() {
-    const question = questions["questions"][Math.floor(Math.random() * questions["questions"].length)];
+function getRandomQuestion(ratings) {
+    const rating = ratings.charAt(Math.floor(Math.random() * ratings.length)); 
+    const question = questions["questions"][rating][Math.floor(Math.random() * questions["questions"][rating].length)];
 
     return question;
 }
